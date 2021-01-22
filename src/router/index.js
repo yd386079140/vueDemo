@@ -7,6 +7,8 @@ import center from '@/views/center'
 import nowplaying from '@/views/film/Nowplaying'
 import comingsoon from '@/views/film/Comingsoon'
 import other from '@/views/other'
+import todolist from '@/views/todolist'
+import demo from '@/views/demo'
 
 
 Vue.use(VueRouter)
@@ -41,7 +43,15 @@ const routes = [
   {
     path: '/other',
     component: other
-  }
+  },
+  {
+    path: '/todolist',
+    component: todolist
+  },
+  {
+    path: '/demo',
+    component: demo
+  },
 ]
 
 const router = new VueRouter({

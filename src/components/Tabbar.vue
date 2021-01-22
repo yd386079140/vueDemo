@@ -4,18 +4,26 @@
     <ul>
       <router-link to="/film" tag="li" activeClass="myactive">
         <i class="iconfont icon-electronics"></i>
-        电影
+        渐变球
       </router-link>
       <router-link to="/cinema" tag="li" activeClass="myactive">
         <i class="iconfont icon-store"></i>
-        影院</router-link
+        echarts</router-link
       >
       <router-link to="/center" tag="li" activeClass="myactive">
         <i class="iconfont icon-account"></i>
-        我的</router-link
+        书籍</router-link
       >
       <router-link to="/other" tag="li" activeClass="myactive">
-        <i class="iconfont icon-account"></i>
+        <i class="iconfont icon-smile"></i>
+        任务书</router-link
+      >
+      <router-link to="/todolist" tag="li" activeClass="myactive">
+        <i class="iconfont icon-favorites"></i>
+        记事本</router-link
+      >
+      <router-link to="/demo" tag="li" activeClass="myactive">
+        <i class="iconfont icon-atm"></i>
         其他</router-link
       >
     </ul>

@@ -23,7 +23,7 @@
       class="grid-item"
       v-for="(item,index) in 9"
       :key="index"
-      @click="handleOne(item,index)"
+      @click="handleOne(index)"
       :class="showBoxs.indexOf(index) === -1 ? '' : 'hover'"
       >
       </div>
@@ -61,7 +61,7 @@ export default {
     handleRedMation(index){
       this.redMation = index
     },
-    handleOne(item,index){
+    handleOne(index){
       const isAdded = this.showBoxs.indexOf(index)
       if(isAdded === -1){
         this.showBoxs.push(index)
