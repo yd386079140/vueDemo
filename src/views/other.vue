@@ -13,7 +13,7 @@
       </h2>
       <ol class="demo-box" v-if="todoList.length">
         <li v-for="(item,index) in todoList" :key="index">
-          <button class="btnCheck" type="checkbox" @click="changeInfo(item,index)"></button>
+          <button class="btnCheck" @click="changeInfo(item,index)"></button>
           <p>{{item}}</p>
           <a @click="subInfo(index)">-</a>
         </li>
@@ -24,7 +24,7 @@
       </h2>
       <ul v-if="doneList.length">
         <li  v-for="(i,index) in doneList" :key="index">
-          <button class="btnChecked" type="checkbox"  @click="backInfo(i,index)">✔</button>
+          <button class="btnChecked"  @click="backInfo(i,index)">✔</button>
           <p style="text-decoration:line-through">{{i}}</p>
           <a @click="subInfomation(index)">-</a>
         </li>

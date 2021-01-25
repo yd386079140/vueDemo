@@ -154,9 +154,9 @@ export default {
   height: 16px;
   top: 2px;
   left: 0;
-  background: #7eea19;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   border-radius: 16px;
-  box-shadow: 0 0 12px 0 #7eea19, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+  box-shadow: 0 0 12px 0 #692915, inset 0 1px 0 0 rgba(228, 220, 220, 0.45),
     inset 1px 0 0 0 rgba(255, 255, 255, 0.25),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
   overflow: hidden;
@@ -170,7 +170,7 @@ export default {
   width: 16px;
 }
 .progressbar .label .bar.color {
-  box-shadow: 0 0 5px 0 #7eea19, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+  box-shadow: 0 0 5px 0 #df564c, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
     inset 1px 0 0 0 rgba(255, 255, 255, 0.25),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
@@ -180,7 +180,7 @@ export default {
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
 .progressbar .label .bar.color3 {
-  box-shadow: 0 0 5px 0 #e81957, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+  box-shadow: 0 0 5px 0 #860a2f, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
     inset 1px 0 0 0 rgba(255, 255, 255, 0.25),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
@@ -190,19 +190,19 @@ export default {
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
 .progressbar .bar.color2 {
-  background: #e5c319;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   box-shadow: 0 0 12px 0 #e5c319, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
     inset 1px 0 0 0 rgba(255, 255, 255, 0.25),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
 .progressbar .bar.color3 {
-  background: #ff6895;
-  box-shadow: 0 0 7px 0 #e81957, 0 1px 0 0 rgba(255, 255, 255, 0.45),
+  background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+  box-shadow: 0 0 7px 0 #790626, 0 1px 0 0 rgba(255, 255, 255, 0.45),
     1px 0 0 0 rgba(255, 255, 255, 0.25), -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
 .progressbar .bar.color4 {
-  background: #186de2;
-  box-shadow: 0 0 12px 0 #186de2, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+  background-image: linear-gradient(to right, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+  box-shadow: 0 0 12px 0 #0b68eb, inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
     inset 1px 0 0 0 rgba(255, 255, 255, 0.25),
     inset -1px 0 0 0 rgba(255, 255, 255, 0.25);
 }
