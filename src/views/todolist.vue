@@ -7,21 +7,14 @@
       <button @click="doneInfo">已完成任务</button>
     </div>
     <div class="ulList">
-
-      <ul v-show='all'>
-
-        <li v-for="(item,index) in todolist" :key="index" :style="isRed ?'text-decoration:line-through':''" :class="isRed ? 'red' : ''">
-          <input type="checkbox" @change="handleRed">
+      <ul>
+        <li v-for="(item,index) in changeState"
+        :key="index"
+        >
+          <input type="checkbox" v-model="checked" @change="handleChangeState(item)">
           {{item.name}}
+          <!-- :style="isRed ?'text-decoration:line-through':''" :class="isRed ? 'red' : ''" -->
           </li>
-      </ul>
-
-      <ul v-show="doing">
-        <li v-for="(item,index) in doinglist" :key="index">{{item.name}}</li>
-      </ul>
-
-      <ul v-show="done">
-        <li v-for="(item,index) in donelist" :key="index">{{item.name}}</li>
       </ul>
     </div>
   </div>
@@ -31,50 +24,51 @@
 export default {
   data(){
     return{
+      checked:false,
+      state:0,
       infomation:'',
       todolist:[
-        {id:1,name:'萨湖分化和辐射防护',state:1},
-        {id:2,name:'和恢复数据机房回复',state:1}
+        {id:1,name:'萨湖分化和辐射防护',state:0},
+        {id:2,name:'和恢复数据机房回复',state:0}
         ],
-      all:true,
-      doing:false,
-      done:false,
       isRed:false,
-      doinglist:[
-        'lol'
-      ],
-      donelist:[
-        'tnt'
-      ]
     }
+  },
+  computed:{
+    changeState(){
+      if (this.state === 0) {
+        return this.todolist
+    }else{
+        return this.todolist.filter(item => item.state == this.state)
+    }
+  }
   },
   methods:{
     allInfo(){
-      this.all = true
-      this.done = false
-      this.doing = false
+      this.state = 0
       if(this.infomation !== ''){
         const name = this.infomation
         const id = new Date().getTime()
-        this.todolist.push({id: id, name: name, state: 1})
+        this.todolist.push({id: id, name: name, state: 0})
         this.infomation = ''
       }
     },
     doingInfo(){
-      this.all = false
-      this.doing = true
-      this.done = false
+      if(this.checked === false){
+        this.state = 1
+      }
     },
     doneInfo(){
-      this.all = false
-      this.doing = false
-      this.done = true
+      if(this.checked === false){
+        this.state = 2
+      }
     },
-    handleRed(){
-      this.isRed = true
+    handleChangeState(){
+      this.checked = true
     }
   }
 }
+
 </script>
 
 <style scoped>
