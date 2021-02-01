@@ -12,7 +12,7 @@
       >
       <router-link to="/center" tag="li" activeClass="myactive">
         <i class="iconfont icon-account"></i>
-        书籍</router-link
+        进度条</router-link
       >
       <router-link to="/other" tag="li" activeClass="myactive">
         <i class="iconfont icon-smile"></i>
@@ -25,6 +25,10 @@
       <router-link to="/demo" tag="li" activeClass="myactive">
         <i class="iconfont icon-atm"></i>
         其他</router-link
+      >
+      <router-link to="/heart" tag="li" activeClass="myactive">
+        <i class="iconfont icon-favorites"></i>
+        收藏</router-link
       >
     </ul>
   </nav>

@@ -9,6 +9,7 @@ import comingsoon from '@/views/film/Comingsoon'
 import other from '@/views/other'
 import todolist from '@/views/todolist'
 import demo from '@/views/demo'
+import heart from '@/views/heart'
 
 
 Vue.use(VueRouter)
@@ -51,6 +52,10 @@ const routes = [
   {
     path: '/demo',
     component: demo
+  },
+  {
+    path: '/heart',
+    component: heart
   },
 ]
 
